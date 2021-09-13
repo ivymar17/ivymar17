@@ -30,10 +30,10 @@ Blockchain.blocks.push({
 // TODO: insert each line into blockchain
 for (let line of poem){   
     var index = Blockchain.blocks.length - 1;
-	var prevHash = Blockchain.blocks[index].hash;
-	index += 1; 
-	var data = line;
-	createBlock(index, prevHash, data);  
+    var prevHash = Blockchain.blocks[index].hash;
+    index += 1; 
+    var data = line;
+    createBlock(index, prevHash, data);  
 };
 
 // Calls Verification function and verifies length of the block
